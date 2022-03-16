@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee interest survey form </title>
+ 
+  <style>
+ body{
+     background-color: azure;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     text-align: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     font-style: 'Times New Roman'
+    }
+input[type=text] {
+height: 5px;
+padding: 12px 15px;
+margin: 4px 0;
+border: 2px solid rgb(207, 121, 39);
+border-radius: 4px;
+background-color: antiquewhite;
+color: white;
+}
+textarea {
+    height:3cm;
+    padding: 16px 20px;
+    border: 2px solid rgb(207, 121, 39);
+    border-radius: 4px;
+    background-color: antiquewhite;
+}
+select {
+    width: 15%;
+    padding: 16px 20px;
+    border: 2px solid rgb(207, 121, 39);
+    border-radius: 4px;
+    background-color: antiquewhite;
+}
+input[type=submit] {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: brown;
+} 
+</style>
+ </head>
+ <body>
+     <header><h1>Employee interests survey form</h1></header>
+     <main>
+         <form action="Employee interest survey form">
+             <div>
+                 <label for="Enter your name">Enter your name:</label>
+                 <input type="text" name="name" id="Enter your name">
+             </div><br>
+             <div>
+                 <label for="department">Enter your department:</label>
+                 <input type="text" name="dept" id="department"> 
+             </div><br>
+             <div>
+                 <label for="information">Tell us a little about yourself:</label>
+                 <textarea name="Text" id="information" cols="30" rows="5"></textarea>
+             </div><br>
+             <div>
+                 <label for="exercise">Do you exercise at home?</label>
+                 <input type="radio" name="exercise" />Yes 
+                 <input type="radio" name="exercise" />No
+             </div><br>
+             <div>
+                 How do you like to read about your favourite topics?<br><br>
+                 <input type="checkbox" name="choice">Books
+                 <input type="checkbox" name="choice">Online resources
+                 <input type="checkbox" name="choice">Phone apps
+                 <input type="checkbox" name="choice">Magazines
+             </div><br>
+             <div>
+                 <label for="Movie">What genre of movies do you like?</label>
+                 <select name="Genre" id="Movie" class="bgc">
+                 <option value="Horror">Horror</option>
+                 <option value="Thriller">Thriller</option>
+                 <option value="Romance">Romance</option>
+                 <option value="Action">Action</option>
+                 <option value="Scifi">Scifi</option>
+                 <option value="Comedy">Comedy</option>
+             </select>
+             </div><br>
+             <div>
+                 <input type="submit" value="submit form">
+             </div>
+ </form>
+ </main>
+</body>
+</html>
